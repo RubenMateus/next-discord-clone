@@ -1,9 +1,7 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
-  purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
-  darkMode: false, // or 'media' or 'class'
-  mode: "jit",
+  content: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
   theme: {
     boxShadow: {
       sm: "0 1px 0 rgba(4,4,5,0.2),0 1.5px 0 rgba(6,6,7,0.05),0 2px 0 rgba(4,4,5,0.05)",
@@ -33,10 +31,6 @@ module.exports = {
         },
       },
     },
-  },
-  variants: {
-    extend: {},
-    scrollbar: ['rounded']
   },
   plugins: [
     require("@tailwindcss/forms"),
