@@ -11,7 +11,7 @@ exports[`Home render snapshot 1`] = `
       Dashboard
     </div>
     <div
-      class="flex-1 p-3 space-y-2 overflow-y-scroll font-medium text-gray-300 "
+      class="flex-1 p-3 space-y-2 overflow-auto font-medium text-gray-300 "
     >
       <p
         class="text-white"
