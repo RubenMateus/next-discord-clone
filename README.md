@@ -1,34 +1,25 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next Discord Clone (WORK IN PROGRESS)   👷🏻‍♂️  🚧
 
-## Getting Started
+Built with:
 
-First, run the development server:
+- Next.js
+- Tailwind CSS
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+[![Build and Test](https://github.com/RubenMateus/next-discord-clone/actions/workflows/build.yml/badge.svg)](https://github.com/RubenMateus/next-discord-clone/actions/workflows/build.yml)
+[![CodeQL](https://github.com/RubenMateus/next-discord-clone/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/RubenMateus/next-discord-clone/actions/workflows/codeql-analysis.yml)
+[![Create Release](https://github.com/RubenMateus/next-discord-clone/actions/workflows/release.yml/badge.svg)](https://github.com/RubenMateus/next-discord-clone/actions/workflows/release.yml)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/833ec0ca93414d31a62ff20ed83f7f20)](https://www.codacy.com/gh/RubenMateus/next-discord-clone/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=RubenMateus/next-discord-clone&amp;utm_campaign=Badge_Grade)
+[![codecov](https://codecov.io/gh/RubenMateus/next-tetris/branch/master/graph/badge.svg?token=4XYIP6IOVP)](https://codecov.io/gh/RubenMateus/next-tetris)
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+This is based on a tutorial from egghead.
+Tried to use best practices with linting, testing and styling and components.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Added several other things to the project.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- `eslint` with `prettier`
+- `husky` and `lint-staged`
+- `react-testing-library` and `jest`
+- `next/jest` experimental features and coverage in Codecov.
+- Build and Test with `Github actions`.
+- Deployed to `Vercel`.
