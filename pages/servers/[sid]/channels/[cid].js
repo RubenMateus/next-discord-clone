@@ -2,8 +2,9 @@ import { useRouter } from "next/router";
 import { useState } from "react";
 
 import { Message, MessageWithUser } from "components/Message";
-import * as Icons from "components/icons";
+import Icons from "components/Icons";
 import ChannelLink from "components/ChannelLink";
+
 import { data } from "data";
 
 export default function Server() {
@@ -75,7 +76,7 @@ export default function Server() {
       <div className="flex flex-col flex-1 flex-shrink min-w-0 bg-gray-700">
         <div className="flex items-center h-12 px-2 shadow-sm">
           <div className="flex items-center">
-            <Icons.Hashtag className="w-6 h-6 mx-2 font-semibold text-gray-400" />
+            <Icons.HashTag className="w-6 h-6 mx-2 font-semibold text-gray-400" />
             <span className="mr-2 text-white font-title whitespace-nowrap">
               {channel?.label}
             </span>
@@ -91,7 +92,7 @@ export default function Server() {
           {/* Mobile buttons */}
           <div className="flex items-center ml-auto md:hidden">
             <button className="text-gray-200 hover:text-gray-100">
-              <Icons.HashtagWithSpeechBubble className="w-6 h-6 mx-2" />
+              <Icons.HashTagWithSpeechBubble className="w-6 h-6 mx-2" />
             </button>
             <button className="text-gray-200 hover:text-gray-100">
               <Icons.People className="w-6 h-6 mx-2" />
@@ -101,7 +102,7 @@ export default function Server() {
           {/* Desktop buttons */}
           <div className="items-center hidden ml-auto md:flex">
             <button className="text-gray-200 hover:text-gray-100">
-              <Icons.HashtagWithSpeechBubble className="w-6 h-6 mx-2" />
+              <Icons.HashTagWithSpeechBubble className="w-6 h-6 mx-2" />
             </button>
             <button className="text-gray-200 hover:text-gray-100">
               <Icons.Bell className="w-6 h-6 mx-2" />

@@ -2,10 +2,12 @@ import { useRouter } from 'next/router';
 import Link from 'next/link';
 
 import { data } from 'data';
-import * as Icons from 'components/icons';
+import Icons from 'components/Icons';
 
 const ChannelLink = ({ channel }) => {
-  const Icon = channel.icon ? Icons[channel.icon] : Icons.Hashtag;
+  console.log(Icons);
+
+  const Icon = channel.icon ? Icons[channel.icon] : Icons.HashTag;
 
   const router = useRouter();
 
@@ -41,6 +43,6 @@ const ChannelLink = ({ channel }) => {
       </a>
     </Link>
   );
-}
+};
 
 export default ChannelLink;

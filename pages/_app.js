@@ -2,8 +2,8 @@ import Head from "next/head";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
-import { Discord } from "../components/icons";
-import { data } from "../data";
+import Icons from "components/Icons";
+import { data } from "data";
 import Image from 'next/image'
 
 import "../styles/globals.css";
@@ -21,7 +21,7 @@ function MyApp({ Component, pageProps }) {
       <div className="flex h-screen text-gray-100">
           <div className="hidden p-3 space-y-2 overflow-auto bg-gray-900 md:block">
             <NavLink href="/">
-              <Discord className="h-5 w-7" />
+              <Icons.Discord className="h-5 w-7" />
             </NavLink>
 
             <hr className="border-t-white/[.06] border-t-2 rounded mx-2" />

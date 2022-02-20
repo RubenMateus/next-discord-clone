@@ -14,7 +14,24 @@ const customJestConfig = {
     '^@/pages/(.*)$': '<rootDir>/pages/$1',
     '^@/data/(.*)$': '<rootDir>/data/$1',
   },
-  testEnvironment: 'jest-environment-jsdom',
+  testEnvironment: 'jsdom',
+  testPathIgnorePatterns: [
+    '<rootDir>/node_modules/',
+    '<rootDir>/.next/',
+    '<rootDir>/coverage/',
+  ],
+  collectCoverage: true,
+  collectCoverageFrom: [
+    '**/*.{js,jsx}',
+    '!<rootDir>/jest.config.js',
+    '!<rootDir>/postcss.config.js',
+    '!<rootDir>/tailwind.config.js',
+  ],
+  coveragePathIgnorePatterns: [
+    '<rootDir>/node_modules/',
+    '<rootDir>/.next/',
+    '<rootDir>/coverage/',
+  ],
 }
 
 // createJestConfig is exported this way to ensure that next/jest can load the Next.js config which is async

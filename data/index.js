@@ -24,7 +24,7 @@ export const data = [
           {
             id: 2,
             label: "announcements",
-            icon: "Speakerphone",
+            icon: "SpeakerPhone",
             messages: getMessages(),
           },
         ],
@@ -167,7 +167,7 @@ export const data = [
           {
             id: 18,
             label: "announcements",
-            icon: "Speakerphone",
+            icon: "SpeakerPhone",
             description:
               "Announcements related to this Discord server and Next.js",
             messages: getMessages(),
@@ -202,7 +202,7 @@ export const data = [
           {
             id: 21,
             label: "general",
-            icon: "HashtagWithSpeechBubble",
+            icon: "HashTagWithSpeechBubble",
             description: "Discussions about Next.js in general",
             messages: getMessages(),
           },
